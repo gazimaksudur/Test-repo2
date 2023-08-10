@@ -75,3 +75,109 @@ To https://github.com/2020331062GAZI/Test-repo1.git
    88bb768..4c1bc5b  main -> main
 branch 'main' set up to track 'origin/main'.
 PS D:\Test-repo1>
+
+
+         .\test2.txt
+PS D:\Test-repo2> git add .
+PS D:\Test-repo2> git commit -m "Ya rab mujhe maf kar do."
+[main 69adfc9] Ya rab mujhe maf kar do.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS D:\Test-repo2> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS D:\Test-repo2> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gazimaksudur/Test-repo2.git
+   c5d70e7..69adfc9  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Test-repo2> .\test2.txt
+PS D:\Test-repo2> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\Test-repo2> git diff
+diff --git a/test2.txt b/test2.txt
+index 2aa8aa7..90f4cfd 100644
+Binary files a/test2.txt and b/test2.txt differ
+PS D:\Test-repo2> git add .
+PS D:\Test-repo2> git diff
+PS D:\Test-repo2> git commit -m "Mujhe to karne he hogi."
+[main 85dda62] Mujhe to karne he hogi.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS D:\Test-repo2> git diff
+PS D:\Test-repo2> git config user.name "gazi"
+PS D:\Test-repo2> git config credential.username "gazimaksudur"
+PS D:\Test-repo2> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gazimaksudur/Test-repo2.git
+   69adfc9..85dda62  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Test-repo2>
+                  .\test2.txt
+PS D:\Test-repo2> git add .
+PS D:\Test-repo2> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test2.txt
+
+PS D:\Test-repo2> git commit -m "Final commit."
+[main be74a31] Final commit.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS D:\Test-repo2> git log --onelin e
+fatal: ambiguous argument 'e': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS D:\Test-repo2> git log --oneline
+be74a31 (HEAD -> main) Final commit.
+85dda62 (origin/main, origin/HEAD) Mujhe to karne he hogi.
+69adfc9 Ya rab mujhe maf kar do.
+c5d70e7 Commit attemp from different account.
+9331a07 First time create and upload and commit from my timeline
+a2fc7e4 Merge pull request #1 from gazimaksudur/gazimaksudur-patch-1
+682b3ef (origin/gazimaksudur-patch-1) Adding git multi handle config solution
+59a5306 Initial commit
+PS D:\Test-repo2> git branch
+* main
+PS D:\Test-repo2> git push -u origin main
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/gazimaksudur/Test-repo2.git/'
+PS D:\Test-repo2> git config user.name "gazi"
+PS D:\Test-repo2> git config credential.username "gazimaksudur"
+PS D:\Test-repo2> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gazimaksudur/Test-repo2.git
+   85dda62..be74a31  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Test-repo2>
