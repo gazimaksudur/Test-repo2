@@ -1,0 +1,77 @@
+    Initial commit
+PS D:\Test-repo1> git log --oneline
+88bb768 (HEAD -> main, origin/main, origin/HEAD) My growing update
+cd960b5 Update my born info
+fd221fa Create test1.txt
+22d670b Initial commit
+PS D:\Test-repo1> .\test1.txt
+PS D:\Test-repo1> .\test1.txt
+PS D:\Test-repo1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\Test-repo1> git add .
+PS D:\Test-repo1> git commit -m "Update for my passed grandmother"
+[main 4c1bc5b] Update for my passed grandmother
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS D:\Test-repo1> git log --oneline
+4c1bc5b (HEAD -> main) Update for my passed grandmother
+88bb768 (origin/main, origin/HEAD) My growing update
+cd960b5 Update my born info
+fd221fa Create test1.txt
+22d670b Initial commit
+PS D:\Test-repo1> git push -u origin main
+remote: Permission to 2020331062GAZI/Test-repo1.git denied to gazimaksudur.
+fatal: unable to access 'https://github.com/2020331062GAZI/Test-repo1.git/': The requested URL returned error: 403
+PS D:\Test-repo1> git config user.name "gazi"
+PS D:\Test-repo1> git config credential.username "gazimaksudur"
+PS D:\Test-repo1> git push -u origin main
+remote: Permission to 2020331062GAZI/Test-repo1.git denied to gazimaksudur.
+fatal: unable to access 'https://github.com/2020331062GAZI/Test-repo1.git/': The requested URL returned error: 403
+PS D:\Test-repo1> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS D:\Test-repo1> git log --oneline
+4c1bc5b (HEAD -> main) Update for my passed grandmother
+88bb768 (origin/main, origin/HEAD) My growing update
+cd960b5 Update my born info
+fd221fa Create test1.txt
+22d670b Initial commit
+PS D:\Test-repo1> git config user.name "gazi"
+PS D:\Test-repo1> git config credential.username "gazimaksudur"
+PS D:\Test-repo1> git push -u origin main
+remote: Permission to 2020331062GAZI/Test-repo1.git denied to gazimaksudur.
+fatal: unable to access 'https://github.com/2020331062GAZI/Test-repo1.git/': The requested URL returned error: 403
+PS D:\Test-repo1> git config credential.username "2020331062GAZI"
+PS D:\Test-repo1> git push -u origin main
+info: please complete authentication in your browser...
+remote: Permission to 2020331062GAZI/Test-repo1.git denied to gazimaksudur.
+fatal: unable to access 'https://github.com/2020331062GAZI/Test-repo1.git/': The requested URL returned error: 403
+PS D:\Test-repo1> git config user.name "gazi"
+PS D:\Test-repo1> git config credential.username "gazimaksudur"
+PS D:\Test-repo1> git push -u origin main
+remote: Permission to 2020331062GAZI/Test-repo1.git denied to gazimaksudur.
+fatal: unable to access 'https://github.com/2020331062GAZI/Test-repo1.git/': The requested URL returned error: 403
+PS D:\Test-repo1> git config credential.username "2020331062GAZI"
+PS D:\Test-repo1> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 385 bytes | 385.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/2020331062GAZI/Test-repo1.git
+   88bb768..4c1bc5b  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Test-repo1>
